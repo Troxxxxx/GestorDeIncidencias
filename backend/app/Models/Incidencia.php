@@ -9,13 +9,11 @@ class Incidencia extends Model
 {
     use HasFactory;
 
-    // Define el nombre de la tabla asociada
     protected $table = 't_incidencias';
 
     // Desactiva las marcas de tiempo
     public $timestamps = false;
 
-    // Define los campos que se pueden asignar masivamente
     protected $fillable = [
         'CT_TITULO',
         'CT_DESCRIPCION',
@@ -33,7 +31,6 @@ class Incidencia extends Model
         'CT_JUSTIFICACION_CIERRE',
     ];
 
-    // Si tienes relaciones, puedes definirlas aquí (Ejemplo de relación con usuario)
     public function usuario()
     {
         return $this->belongsTo(User::class, 'CN_ID_USUARIO');

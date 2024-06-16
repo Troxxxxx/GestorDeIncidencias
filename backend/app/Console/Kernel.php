@@ -15,6 +15,8 @@ class Kernel extends ConsoleKernel
     protected $commands = [
         // Registrar comandos aquí
         \App\Console\Commands\EncryptPasswords::class, // Comando para encriptar contraseñas
+        \App\Console\Commands\EncryptUserPasswords::class,
+
     ];
 
     /**

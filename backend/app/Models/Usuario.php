@@ -14,9 +14,9 @@ class Usuario extends Authenticatable
 
     protected $table = 't_usuarios';
 
-    protected $primaryKey = 'CN_ID_USUARIO'; // Especifica la clave primaria
-    public $incrementing = true; // Indica si la clave primaria es auto-incremental
-    protected $keyType = 'int'; // Tipo de la clave primaria
+    protected $primaryKey = 'CN_ID_USUARIO'; 
+    public $incrementing = true; 
+    protected $keyType = 'int'; 
 
     protected $fillable = [
         'CT_NOMBRE_USUARIO',

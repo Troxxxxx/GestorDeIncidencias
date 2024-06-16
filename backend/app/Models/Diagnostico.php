@@ -9,13 +9,11 @@ class Diagnostico extends Model
 {
     use HasFactory;
 
-    // Define el nombre de la tabla asociada
     protected $table = 't_diagnosticos';
 
     // Desactiva las marcas de tiempo
     public $timestamps = false;
 
-    // Define los campos que se pueden asignar masivamente
     protected $fillable = [
         'CN_ID_INCIDENCIA',
         'CT_DESCRIPCION_DIAGNOSTICO',
